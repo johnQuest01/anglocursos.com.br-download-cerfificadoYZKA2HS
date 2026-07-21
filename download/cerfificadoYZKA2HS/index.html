@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Certificado Suporte Básico de Vida (BLS)</title>
-  <meta http-equiv="refresh" content="0; url=certificado.pdf">
-  <script>
-    window.location.replace("certificado.pdf");
-  </script>
+  <title>Baixar Certificado</title>
 </head>
 <body>
   <p style="font-family: system-ui, sans-serif; padding: 24px;">
-    <a href="certificado.pdf">Abrir certificado PDF</a>
+    Baixando o certificado…
+    <a id="link" href="certificado.pdf" download="Certificado Suporte Básico de Vida (BLS).pdf">
+      Clique aqui se o download não iniciar
+    </a>
   </p>
+  <script>
+    const a = document.getElementById("link");
+    a.click();
+  </script>
 </body>
 </html>
