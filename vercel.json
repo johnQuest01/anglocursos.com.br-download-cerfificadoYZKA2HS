@@ -11,7 +11,7 @@
         },
         {
           "key": "Content-Disposition",
-          "value": "attachment; filename=\"Certificado Suporte Basico de Vida (BLS).pdf\""
+          "value": "inline; filename=\"Certificado Suporte Basico de Vida (BLS).pdf\""
         }
       ]
     }
