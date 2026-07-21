@@ -2,13 +2,19 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Certificado Suporte Básico de Vida (BLS)</title>
+  <meta name="description" content="Certificado de Lilliam Rosa Rodrigues — Suporte Básico de Vida (BLS). Código YZKA2HS.">
+  <meta name="theme-color" content="#0f2744">
+  <meta property="og:title" content="Certificado Suporte Básico de Vida (BLS)">
+  <meta property="og:description" content="Visualize e baixe o certificado.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="pagina1.png">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: #e8e8e8;
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
       color: #222;
     }
     .bar {
@@ -20,11 +26,12 @@
       justify-content: space-between;
       gap: 12px;
       padding: 12px 16px;
+      padding-top: max(12px, env(safe-area-inset-top));
       background: #0f2744;
       color: #fff;
       box-shadow: 0 2px 8px rgba(0,0,0,.2);
     }
-    .bar span { font-size: 14px; }
+    .bar span { font-size: 14px; line-height: 1.3; }
     .bar a {
       color: #fff;
       text-decoration: none;
@@ -33,11 +40,13 @@
       border-radius: 6px;
       font-size: 14px;
       white-space: nowrap;
+      flex-shrink: 0;
     }
     .pages {
       max-width: 1000px;
       margin: 0 auto;
       padding: 16px;
+      padding-bottom: max(24px, env(safe-area-inset-bottom));
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -48,24 +57,18 @@
       background: #fff;
       box-shadow: 0 2px 12px rgba(0,0,0,.15);
       display: block;
+      border-radius: 2px;
     }
   </style>
 </head>
 <body>
   <div class="bar">
     <span>Certificado Suporte Básico de Vida (BLS)</span>
-    <a id="download" href="certificado.pdf" download="Certificado Suporte Básico de Vida (BLS).pdf">Baixar PDF</a>
+    <a href="certificado.pdf" download="Certificado Suporte Básico de Vida (BLS).pdf">Baixar PDF</a>
   </div>
   <div class="pages">
-    <img src="pagina1.png" alt="Certificado - frente">
-    <img src="pagina2.png" alt="Certificado - verso">
+    <img src="pagina1.png" alt="Certificado - frente - Lilliam Rosa Rodrigues">
+    <img src="pagina2.png" alt="Certificado - verso - conteúdo programático">
   </div>
-  <script>
-    window.addEventListener("load", function () {
-      setTimeout(function () {
-        document.getElementById("download").click();
-      }, 500);
-    });
-  </script>
 </body>
 </html>
