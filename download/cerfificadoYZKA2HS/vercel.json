@@ -1,19 +1,9 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
+  "redirects": [
     {
-      "source": "/certificado.pdf",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "inline; filename=\"Certificado Suporte Basico de Vida (BLS).pdf\""
-        }
-      ]
+      "source": "/(.*)",
+      "destination": "https://anglocursos-download-cerfificadoyzk.vercel.app/download/cerfificadoYZKA2HS/",
+      "permanent": false
     }
   ]
 }
